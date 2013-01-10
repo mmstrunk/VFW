@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- This is my first html -->
+<!-- Michael Strunk, Visual Frameworks, 1-10-12, Project 1 -->
+
+<html>
+	<head>
+		<!-- Meta tage -->
+		<meta charset="utf-8" />
+		<meta name="Food Form" content="Submit about food and restaurants." />
+		<meta name="keywords" content="html5, VF, food, visit, Full Sail" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="viewport" content="taget-densitydpi=device-dpi" />
+		
+		<!-- Document title -->
+		<title>My First HTML5 Document</title>
+	</head>
+	
+	<body>
+		<h1>Food for Thought!</h1>		
+		<form action="#" method="post">
+		<fieldset>
+			<legend>Who Are You?</legend>
+		First name: <input type="text" name="firstname"><br>
+		Last name: <input type="text" name="lastname"><br>
+		<input type="radio" name="sex" value="male">Male<br>
+		<input type="radio" name="sex" value="female">Female<br>
+		</fieldset>
+		<fieldset>
+			<legend>Lets talk Food!</legend>
+		<li>
+			<label for="timeOut">Last time you ate out</label>
+		<select id="timeOut">
+			<optgroup label="Pick one!?">
+				<option>yesterday</option>
+				<option>last week</option>
+				<option>last month</option>
+				<option>longer</option>
+				</optgroup>
+		</select><br>		
+			Most visited restaurant: <input type="text" name="location" placeholder="Olive Garden"><br>
+			<ul>
+				<li>What type of restaurant do you prefer?
+					<ul>
+						<li><input type="checkbox" checked value="Italian" id="Italian"/><label for="italian">Italian</label></li>
+						<li><input type="checkbox" value="Steakhouse" id="steakhouse"/><label for="steakhouse">Steakhouse</label></li>
+						<li><input type="checkbox" value="Buffet" id="buffet"/><label for="buffet">Buffet</label></li>
+						<li><input type="checkbox" value="Sports Pub" id="sports pub"/><label for="sports pub">Sports Pub</label></li>
+					</ul>
+				</li>
+				<li><label for="comments">What's makes a good dining experience?:</label><textarea id="comments"></textarea></li>
+				<li><input type="hidden" value="true"/></li>
+		</fieldset>
+		<input type="submit" value="Submit">		
+		</form>			
+	</body>
+</html>
