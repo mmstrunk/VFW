@@ -1,0 +1,46 @@
+/*
+	Michael Strunk
+	Project 2
+	0113
+*/
+
+h1 {
+	border: 1px black;
+	background: gray;
+	color: white;
+	margin: 20px;
+	text-align: center
+}
+
+label{
+	font-family: sans-serif;
+	height: auto;
+	width: auto;
+}
+
+legend{
+	font-family: bold;
+	font-size: larger;
+}
+
+fieldset{
+	background: #d0c7c7;
+	t
+}
+
+li{
+	text-align: left;
+	padding-left: inherit
+}
+
+option{
+	font-style: italic;
+}
+
+body{
+	width: inherit;
+}
+
+form{
+	width: auto;
+}
