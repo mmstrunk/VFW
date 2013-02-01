@@ -1,0 +1,83 @@
+<!doctype html>
+<!--
+Michael Strunk
+VFW
+Project 4
+additem html
+-->
+<html>
+		<head>
+
+			<!-- Character Set Meta -->
+				<meta charset="utf-8" />
+				<meta name="description" content="This page gives you the idea of eating out habits" />
+				<meta name="keywords" content="Name, Amount, Restaurant, Tip, Visit." />
+				<meta name="robots" content="noindex, nofollow" />
+				<meta name="viewport" content="user-scalable=no, width=device-width" />
+				<meta name="viewport" content="target-densitydpi=device-dpi" />
+				<meta name="HandheldFriendly" content="True" />
+				<meta name="MobileOptimized" content="320" />
+
+				<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />	
+				<!--Page Title-->
+			<title>Food for thought!</title>
+
+		</head>
+
+		<body>
+			<h1>Food for thought!</h1>
+
+				<p>Please fill out as much as possible so we have an idea of eating out habits.</p>
+
+				<nav>
+					<a href="#"id="clearData">Clear Stored Data</a>&nbsp;	
+					<a href="#"id="displayData">Display Data</a>
+					<a href="additem.html"id="addNew" style="display:none;">Add New Item</a>
+				</nav>	
+			<form action="#" method="post" id="itemForm">
+				<fieldset>
+					<legend>Basic Information</legend>
+					<ul id ="errors"></ul>	
+					<ul id="basicInfo">
+						<li id="dropDown"><label for="visited">Late Time Visited Restaurant:</label></li>
+						<li><label for="lastName">Name of last visited Restaurant: </label><input type="text" name="lastName" id="lastName" /></li>
+						<li><label for="favRest">What is your Favorite Restaurant:</label><input type="text" name="favRest" id="favRest" /></li>
+						<li><label for="mostVis">Most visited Restaurant:</label><input type="text" name="mostVis" id="mostVis" /></li>
+						<li>Do you order Alcohol beverages?</li>
+						<li><input type="radio" id="yes" value="Yes" name="alcohol" /><label for="yes">Yes</label></li>
+						<li><input type="radio" id="no" value="No" name="alcohol" /><label for="no">No</label></li>	
+						<li><label for="tip">General % tip</label><input id="tip" type="tip"/></li>	
+						<li><input type="checkbox" id="server" value="Yes" class="checkbox" /><label for="server">Check if food effects server tip.</label>
+						</li>
+					</ul>
+
+				</fieldset>
+				<fieldset>
+					<legend>Personal Info</legend>
+					<ul>
+						<li><label for="fName">First Name</label><input type="text" name="fName" id="fName" /></li>
+						<li><label for="lName">Last Name</label><input type="text" name="lName" id="lName" /></li>
+						<li><label for="slider_title">Amount you plan to spend next year at Restaurants:</label></li>
+						<li><label for="level">10</label><input type="range" min="1" max="10" name="quantity" id="quantity" value="1" 																		onchange="showValue(this.value,'quantityAmt')" /><span id="quantityAmt">5000</span></li>
+						<input type="hidden"></li>
+					</ul>
+					</fieldset>	
+					<fieldset>
+						<legend>Please leave comments</legend>
+						<label for="details">Please enter any additional details:<br /></label><textarea id="details"></textarea>
+					</fieldset>	
+
+					<input type="submit" value="Submit" id="saveItem" /><br />	
+					</form>	
+
+					<script type="text/javascript" src="js/json.js"></script>
+					<script type="text/javascript" src="js/main.js"></script>	
+					<script type="text/javascript">
+                        function showValue(newValue,range)
+                        {
+                            document.getElementById(range).innerHTML=newValue;
+              
+                        }
+        </script>
+    </body>
+</html>
